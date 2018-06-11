@@ -1,0 +1,50 @@
+﻿@model FabrykaSPTI_PJ.Models.Maszyna
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Maszyna</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumerEwidencyjny)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumerEwidencyjny)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataUruchomienia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataUruchomienia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hala.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hala.Nazwa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
